@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".Discover.DiscoverFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--朋友圈-->
+        <TextView
+            android:id="@+id/discover_pengyouquan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@mipmap/discover_album_icon"
+            android:drawableRight="@mipmap/arrowright"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="朋友圈"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!--扫一扫、摇一摇-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_saoyisao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_qrcode_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="扫一扫"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/discover_yaoyiyao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_shake_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="摇一摇"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!--看一看、搜一搜-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_kanyikan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_look_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="看一看"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/discover_souyisou"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_search_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="搜一搜"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!--附件的人、购物-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_fujin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_look_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="附件的人"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <!--购物-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:id="@+id/discover_shopping">
+
+
+                <ImageView
+                    android:id="@+id/discover_shopping_leftimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:src="@mipmap/discover_shopping_icon" />
+
+                <TextView
+                    android:id="@+id/discover_shopping_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/discover_shopping_leftimage"
+                    android:fontFamily="cursive"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="购物"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/discover_shopping_arrowimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/arrowright" />
+
+                <TextView
+                    android:id="@+id/discover_shopping_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/discover_shopping_arrowimage"
+                    android:text="618全球购物节" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--游戏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:id="@+id/discover_game">
+
+
+
+            <ImageView
+                android:id="@+id/include_leftimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/discover_game_icon" />
+
+            <TextView
+                android:id="@+id/include_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/include_leftimage"
+                android:fontFamily="cursive"
+                android:text="游戏"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/include_arrowimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/arrowright" />
+
+            <TextView
+                android:id="@+id/include_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/include_arrowimage"
+                android:text="华夏最新结婚版本" />
+        </RelativeLayout>
+
+
+        <!--小程序-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_xiaochengxu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/discover_miniapps_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="小程序"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

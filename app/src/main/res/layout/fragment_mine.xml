@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/mine_head_image"
+                android:layout_width="wrap_content "
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/mine_head_icon" />
+
+            <TextView
+                android:id="@+id/mine_head_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/mine_head_image"
+                android:text="我有一只小毛驴"
+                android:textSize="22sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/mine_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_head_nick"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/mine_head_image"
+                android:text="微信号：xiaokun"
+                android:textSize="16sp"
+                android:textColor="#666666"/>
+
+            <ImageView
+                android:id="@+id/mine_mine_right_arrow"
+                android:layout_width="wrap_content "
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/arrowright" />
+
+            <ImageView
+                android:id="@+id/mine_mine_right_qrcode"
+                android:layout_width="wrap_content "
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/mine_mine_right_arrow"
+                android:src="@mipmap/my_icon_scan"/>
+
+
+        </RelativeLayout>
+
+
+        <!--钱包-->
+        <TextView
+            android:id="@+id/mine_qianbao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@mipmap/mine_qianbao_icon"
+            android:drawableRight="@mipmap/arrowright"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="钱包"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!--收藏、相册、卡包、表情-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_shoucang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/mine_shoucang_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="收藏"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/discover_xiangce"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/mine_xiangce_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="相册"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/discover_kabao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/mine_kabao_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="卡包"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/discover_biaoqing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/mine_biaoqing_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="表情"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!--设置-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discover_shezhi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_white"
+                android:drawableLeft="@mipmap/mine_shezhi_icon"
+                android:drawableRight="@mipmap/arrowright"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="设置"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

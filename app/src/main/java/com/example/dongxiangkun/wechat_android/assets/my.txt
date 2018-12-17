@@ -1,0 +1,52 @@
+
+
+[
+    [{
+
+    }],
+	[{
+
+		"title"    :  "钱包",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "MyCardPackageIcon" 
+	}],
+
+	[{
+
+		"title"    :  "收藏",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"   :  "MoreMyFavorites" 
+	},
+	{
+
+		"title"    :  "相册",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"   :  "MoreMyAlbum" 
+	},
+	{
+
+		"title"    :  "卡包",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"   :  "MyCardPackageIcon" 
+	},
+	{
+
+		"title"    :  "表情",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"   :  "MoreExpressionShops" 
+	}],
+
+
+	[{
+
+		"title"    :  "设置",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"   :  "MoreSetting" 
+	}]
+]

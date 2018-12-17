@@ -1,0 +1,72 @@
+
+[
+	[{
+
+		"title"    :  "朋友圈",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconShowAlbum" 
+	}],
+
+	[{
+
+		"title"    :  "扫一扫",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconQRCode" 
+	},
+	{
+
+		"title"    :  "摇一摇",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconShake"
+	}],
+
+	[{
+
+		"title"    :  "看一看",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconLook"
+	},
+	{
+
+		"title"    :  "搜一搜",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconDiscover"
+	}],
+
+	[{
+
+		"title"    :  "附近的人",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconLocationService" 
+	},
+	{
+
+		"title"    :  "购物",
+		"message"  :  "618全球购物节",
+		"isShow"   :  "YES",
+		"userUrl"  :  "CreditCard_ShoppingBag"
+	}],
+	[
+	{
+
+		"title"    :  "游戏",
+		"message"  :  "华夏最新结婚版本",
+		"isShow"   :  "YES",
+		"userUrl"  :  "MoreGame"
+	}],
+
+	[
+	{
+
+		"title"    :  "小程序",
+		"message"  :  "",
+		"isShow"   :  "YES",
+		"userUrl"  :  "ff_IconMiniApps"
+	}]
+]
