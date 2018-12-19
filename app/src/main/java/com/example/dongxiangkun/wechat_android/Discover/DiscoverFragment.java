@@ -94,9 +94,8 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener {
 
                 Toast.makeText(getActivity(), "购物", Toast.LENGTH_SHORT).show();
 
-//                Intent intent = new Intent(getActivity(), Discover_ShoppingActivity.class);
-//                startActivity(intent);
-
+                Intent intent = new Intent(getActivity(), Discover_ShoppingActivity.class);
+                startActivity(intent);
                 break;
 
             case  R.id.discover_game :
