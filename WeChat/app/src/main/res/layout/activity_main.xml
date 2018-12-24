@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".base.MainActivity"
     android:orientation="vertical">
 
     <!--<include layout="@layout/actionbarlayout"/> -->
 
-    <com.example.dongxiangkun.wechat_android.ActionBar
+    <com.example.dongxiangkun.wechat_android.base.NavigationBar
         android:id="@+id/navigationbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

@@ -23,7 +23,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="UnusedAttribute">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".base.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,11 +31,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Login.LoginActivity" />
-        <activity android:name=".Login.WelcomeActivity" />
+        <activity android:name=".module.login.LoginActivity" />
+        <activity android:name=".module.welcome.WelcomeActivity" />
         <activity
-            android:name=".Discover.Discover_ShoppingActivity"
+            android:name=".module.discover.Discover_ShoppingActivity"
             android:label="京东购物" />
+        <activity android:name=".module.discover.Discover_LookActivity"/>
     </application>
 
 </manifest>

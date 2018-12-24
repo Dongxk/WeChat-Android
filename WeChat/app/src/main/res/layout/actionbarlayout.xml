@@ -3,21 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:background="#000000">
+    android:background="#303f9f">
 
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
         android:src="@mipmap/ic_launcher"
-        android:id="@+id/tabBar_left"
+        android:id="@+id/navigationbar_leftImage"
         />
 
 
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/navigationbar_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -28,8 +29,9 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tabBar_right"/>
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/navigationbar_rightImage"/>
 
 </LinearLayout>

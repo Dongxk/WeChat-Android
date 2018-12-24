@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Discover.Discover_ShoppingActivity">
 
-    <com.example.dongxiangkun.wechat_android.ActionBar
+    <com.example.dongxiangkun.wechat_android.base.NavigationBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/shopping_actionBar"/>
