@@ -27,6 +27,7 @@ public class ContactAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+
         return mList.size();
     }
 
@@ -37,21 +38,23 @@ public class ContactAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
+
         return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View view = View.inflate(mContext, R.layout.fregment_contact_item_adapter,null);
+        if (convertView == null) {
+            convertView = View.inflate(mContext, R.layout.fragment_contact_item_adapter,null);
+        }
 
-        ImageView ivHeadIcon = view.findViewById(R.id.iv_head_icon);
-        TextView tvName = view.findViewById(R.id.tv_name);
-//        Log.d("xxxxxxxxxx", "getView:  " + mList.get(position).get("photo"));
+
+        ImageView ivHeadIcon = convertView.findViewById(R.id.iv_head_icon);
+        TextView tvName = convertView.findViewById(R.id.tv_name);
+
         Glide.with(mContext).load("http://weixintest.ihk.cn/ihkwx_upload/commentPic/20160503/14622764778932thumbnail.jpg").into(ivHeadIcon);
-//        ivHeadIcon.setImageResource(R.mipmap.ic_launcher);
         tvName.setText(mList.get(position).get("userName"));
-
-        return view;
+        return convertView;
     }
 }

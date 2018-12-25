@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +7,25 @@
     tools:context=".Discover.Discover_ShoppingActivity">
 
     <com.example.dongxiangkun.wechat_android.base.NavigationBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/shopping_actionBar"/>
+        android:id="@+id/shopping_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
+
+    <ProgressBar
+        android:id="@+id/shopping_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/shopping_actionBar"
+        android:background="@color/text_yellow"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
 
     <WebView
         android:id="@+id/shopping_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ff0000" />
+        android:layout_below="@+id/shopping_progressbar"/>
 
-    <ProgressBar
-        android:id="@+id/shopping_progressbar"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:max="100"
-        android:progress="0"
-        android:visibility="gone" />
-</FrameLayout>
+</RelativeLayout>

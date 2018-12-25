@@ -38,7 +38,7 @@ public class NavigationBar extends FrameLayout {
 
     private void initView(Context context) {
 
-        View view = inflate(context, R.layout.actionbarlayout, this);
+        View view = inflate(context, R.layout.navigationbar, this);
         tvTitle    = view.findViewById(R.id.navigationbar_title);
         leftImage  = view.findViewById(R.id.navigationbar_leftImage);
         rightImage = view.findViewById(R.id.navigationbar_rightImage);
@@ -49,6 +49,9 @@ public class NavigationBar extends FrameLayout {
         tvTitle.setText(title);
     }
 
+    public void setLeftImage(Integer image) {
+        leftImage.setBackgroundResource(image);
+    }
 
     public void init(String title, boolean isLeftVisiable, OnClickListener leftListener){
 

@@ -2,19 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:background="#303f9f">
-
+    android:background="#303f9f"
+    android:gravity="center_vertical">
 
 
     <ImageView
+        android:id="@+id/navigationbar_leftImage"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_margin="10dp"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/navigationbar_leftImage"
-        />
-
+        android:layout_margin="10dp" />
 
 
     <TextView
@@ -22,16 +18,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="20sp"
         android:gravity="center"
         android:textColor="@color/bg_white"
-        />
+        android:textSize="20sp" />
 
 
     <ImageView
+        android:id="@+id/navigationbar_rightImage"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_margin="10dp"
-        android:id="@+id/navigationbar_rightImage"/>
+        android:layout_margin="10dp" />
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -59,9 +60,12 @@ public class ContactFragment extends Fragment {
 //        }
 
 
+
         SimpleAdapter adapter  = new SimpleAdapter(getActivity(), fileList, R.layout.fragment_contact_item,
                                 new String[]{"photo", "userName"},
                                 new int[]{R.id.contact_image, R.id.contact_name});
+
+
         adapter.setViewBinder(new SimpleAdapter.ViewBinder() {
             @Override
             public boolean setViewValue(View view, Object data, String textRepresentation) {

@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void initData() {
+
         contactFragment     = new ContactFragment();
         messageFragment     = new MessageFragment();
         discoverFragment    = new DiscoverFragment();
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_container, messageFragment).commit();
     }
+
 
     //UI组件初始化与事件绑定
     private void bindViews() {
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
+
+
         RadioButton rbTab1 = findViewById(R.id.rb_weChat);
         RadioButton rbTab2 = findViewById(R.id.rb_contact);
         RadioButton rbTab3 = findViewById(R.id.rb_discover);

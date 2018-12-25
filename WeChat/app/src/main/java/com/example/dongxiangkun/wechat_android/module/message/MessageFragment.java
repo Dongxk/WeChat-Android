@@ -42,15 +42,15 @@ public class MessageFragment extends Fragment {
         listView_main_news = (ListView)view.findViewById(R.id.message_list);
 
         //方法一： 普通赋值
-        list = new ArrayList<Map<String, String>>();
-        for (int i = 0; i < 5; i++) {
-            Map<String, String> map = new HashMap<String, String>();
-            map.put("userphoto", String.valueOf(R.mipmap.ic_launcher));
-            map.put("time",      "20181127_"  + i);
-            map.put("username",  "dongxk_"  + i);
-            map.put("password",  "123456_"  + i);
-            list.add(map);
-        }
+//        list = new ArrayList<Map<String, String>>();
+//        for (int i = 0; i < 5; i++) {
+//            Map<String, String> map = new HashMap<String, String>();
+//            map.put("userphoto", String.valueOf(R.mipmap.mine_head_icon));
+//            map.put("time",      "20181127_"  + i);
+//            map.put("username",  "dongxk_"  + i);
+//            map.put("password",  "123456_"  + i);
+//            list.add(map);
+//        }
 //        Log.i(TAG, "==" + list.toString());
 //        SimpleAdapter adapter = new SimpleAdapter(getActivity(), list, R.layout.fragment_message_item,
 //                new String[]{"userphoto", "time", "username", "password"},
