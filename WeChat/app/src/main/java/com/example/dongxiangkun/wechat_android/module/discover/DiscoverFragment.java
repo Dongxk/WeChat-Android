@@ -77,7 +77,9 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener {
 
             case  R.id.discover_kanyikan :
 
-                Toast.makeText(getActivity(), "看一看", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "看一看", Toast.LENGTH_SHORT).show();
+                Intent lookIntent = new Intent(getActivity(), Discover_LookActivity.class);
+                startActivity(lookIntent);
                 break;
 
             case  R.id.discover_souyisou :
@@ -92,8 +94,8 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener {
 
             case  R.id.discover_shopping :
 
-                Intent intent = new Intent(getActivity(), Discover_ShoppingActivity.class);
-                startActivity(intent);
+                Intent shoppingIntent = new Intent(getActivity(), Discover_ShoppingActivity.class);
+                startActivity(shoppingIntent);
                 break;
 
             case  R.id.discover_game :

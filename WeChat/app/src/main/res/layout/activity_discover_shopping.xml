@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_below="@+id/shopping_actionBar"
-        android:background="@color/text_yellow"
+        android:background="@color/colorYellow"
         android:max="100"
         android:progress="0"
         android:visibility="gone" />

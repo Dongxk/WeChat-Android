@@ -83,20 +83,6 @@ public class ContactFragment extends Fragment {
 
                         Glide.with(getContext()).load(data).placeholder(R.mipmap.ic_launcher).into(iv);
 
-//
-//                        try {
-//                            URL url = new URL( "http://weixintest.ihk.cn/ihkwx_upload/commentPic/20160519/14636463273461.JPEG");
-//                            iv.setImageBitmap(BitmapFactory.decodeStream(url.openStream()));
-//
-//                        } catch (Exception e) {
-//
-//                            Log.i("e-----------------", "setViewValue: " +e);
-//                        }
-
-
-//                    myImageView.setImageURI(Uri.parse(http://example.com/logo.png));
-
-
                     }
 
                     return  true;
